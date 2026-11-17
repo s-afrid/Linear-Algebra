@@ -4,16 +4,16 @@
 
 ## 1. What is a linear equation?
 
-A linear equation in variables \(x_1, x_2, \ldots, x_n\) has the general form:
+A linear equation in variables \(x_1, x_2, \ldots, x_n\) has the general form
 
 \[
-a_1x_1 + a_2x_2 + \cdots + a_nx_n = b
+a_1x_1 + a_2x_2 + \cdots + a_nx_n = b.
 \]
 
-For example:
+For example,
 
 \[
-2x_1 + 3x_2 = 10
+2x_1 + 3x_2 = 10.
 \]
 
 A **system of linear equations** is a collection of two or more linear equations involving the same variables. The objective is to find values of the variables that satisfy every equation simultaneously.
@@ -21,10 +21,10 @@ A **system of linear equations** is a collection of two or more linear equations
 Example:
 
 \[
-\begin{aligned}
-x_1 + x_2 &= 5\\
-2x_1 - x_2 &= 4
-\end{aligned}
+\begin{cases}
+x_1 + x_2 = 5,\\
+2x_1 - x_2 = 4.
+\end{cases}
 \]
 
 ## 2. Geometric interpretation
@@ -44,7 +44,7 @@ The section introduces three operations for simplifying linear systems.
 Replace one row by the sum of itself and a multiple of another row.
 
 \[
-R_2 \rightarrow R_2 - 3R_1
+R_2 \longrightarrow R_2 - 3R_1.
 \]
 
 ### 2. Row interchange
@@ -52,7 +52,7 @@ R_2 \rightarrow R_2 - 3R_1
 Exchange two rows.
 
 \[
-R_1 \leftrightarrow R_2
+R_1 \longleftrightarrow R_2.
 \]
 
 ### 3. Row scaling
@@ -60,7 +60,7 @@ R_1 \leftrightarrow R_2
 Multiply every entry in a row by a nonzero constant.
 
 \[
-R_1 \rightarrow \frac{1}{2}R_1
+R_1 \longrightarrow \frac{1}{2}R_1.
 \]
 
 These operations simplify equations without changing their solution set.
@@ -69,16 +69,16 @@ These operations simplify equations without changing their solution set.
 
 An augmented matrix is a compact representation of a linear system.
 
-For example:
+For example,
 
 \[
-\begin{aligned}
-x_1 + 2x_2 &= 5\\
-3x_1 + 4x_2 &= 11
-\end{aligned}
+\begin{cases}
+x_1 + 2x_2 = 5,\\
+3x_1 + 4x_2 = 11
+\end{cases}
 \]
 
-Can be represented as:
+can be represented as
 
 \[
 \left[
@@ -86,7 +86,7 @@ Can be represented as:
 1 & 2 & 5\\
 3 & 4 & 11
 \end{array}
-\right]
+\right].
 \]
 
 Instead of manipulating entire equations, we can perform elementary row operations directly on the matrix.
@@ -106,17 +106,17 @@ The section introduces two fundamental questions:
 1. Is the system consistent? Does at least one solution exist?
 2. If a solution exists, is it unique?
 
-There are three possible outcomes:
+There are three possible outcomes.
 
 ### No solution — inconsistent
 
-Example:
+For example,
 
 \[
 0x_1 + 0x_2 = 5
 \]
 
-This is impossible, so the system has no solution.
+is impossible, so the system has no solution.
 
 ### One solution — consistent
 
