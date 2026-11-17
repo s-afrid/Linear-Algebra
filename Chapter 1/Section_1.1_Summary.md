@@ -4,28 +4,28 @@
 
 ## 1. What is a linear equation?
 
-A linear equation in variables \(x_1, x_2, \ldots, x_n\) has the general form
+A linear equation in variables $x_1, x_2, \ldots, x_n$ has the general form
 
-\[
+$$
 a_1x_1 + a_2x_2 + \cdots + a_nx_n = b.
-\]
+$$
 
 For example,
 
-\[
+$$
 2x_1 + 3x_2 = 10.
-\]
+$$
 
 A **system of linear equations** is a collection of two or more linear equations involving the same variables. The objective is to find values of the variables that satisfy every equation simultaneously.
 
 Example:
 
-\[
+$$
 \begin{cases}
 x_1 + x_2 = 5,\\
 2x_1 - x_2 = 4.
 \end{cases}
-\]
+$$
 
 ## 2. Geometric interpretation
 
@@ -43,25 +43,25 @@ The section introduces three operations for simplifying linear systems.
 
 Replace one row by the sum of itself and a multiple of another row.
 
-\[
+$$
 R_2 \longrightarrow R_2 - 3R_1.
-\]
+$$
 
 ### 2. Row interchange
 
 Exchange two rows.
 
-\[
+$$
 R_1 \longleftrightarrow R_2.
-\]
+$$
 
 ### 3. Row scaling
 
 Multiply every entry in a row by a nonzero constant.
 
-\[
+$$
 R_1 \longrightarrow \frac{1}{2}R_1.
-\]
+$$
 
 These operations simplify equations without changing their solution set.
 
@@ -71,23 +71,23 @@ An augmented matrix is a compact representation of a linear system.
 
 For example,
 
-\[
+$$
 \begin{cases}
 x_1 + 2x_2 = 5,\\
 3x_1 + 4x_2 = 11
 \end{cases}
-\]
+$$
 
 can be represented as
 
-\[
+$$
 \left[
 \begin{array}{cc|c}
 1 & 2 & 5\\
 3 & 4 & 11
 \end{array}
 \right].
-\]
+$$
 
 Instead of manipulating entire equations, we can perform elementary row operations directly on the matrix.
 
@@ -112,9 +112,9 @@ There are three possible outcomes.
 
 For example,
 
-\[
+$$
 0x_1 + 0x_2 = 5
-\]
+$$
 
 is impossible, so the system has no solution.
 
